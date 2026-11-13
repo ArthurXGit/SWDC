@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@1..144,1..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: gainsboro;
+        }
+
+        .container{
+
+            /* 
+                Learning : 
+
+                if height : fixed val , then chances of overflow is there , if there is more content added .....
+            */
+            /* align-items: center; */
+            /* text-align: center; */
+            width: 270px;
+            /* min-height: 435px; */
+            padding-bottom: 25px;
+            border: 0.5px solid grey;
+            border-radius: 7px;
+            background-color: white;
+            font-family: "Google Sans", sans-serif;
+            font-size: smaller;
+        }
+        
+        .image{
+
+            /* not to use */
+            /* position: relative; */
+            /* left: 5px;
+            top: 5px; */
+            
+            padding: 5px;
+            /* to use */
+            /* border-radius: 7px; */
+            /* padding: 5px; */
+
+            /* 
+                Learning:
+
+                padding use : img border round nahi hua
+
+                padding ke bahar ka border round ho rha tha
+
+                we want to round the borders of the content , which is the image itself
+
+                so use margin instead of padding :)
+            */
+        }
+
+        .image img{
+
+            border-radius: 7px;
+            /* 
+                comment : we could have used the img directly....
+
+                cons : if multiple pic attached , then it will applied in each of the img....
+            */
+        }
+
+        .subhead{
+            margin: 10px 15px;
+        }       
+
+        .subhead span{
+            padding: 2px 9px;
+            margin: 3px;
+            border: 1px solid grey;
+            border-radius: 30px;
+            color: grey;
+        }
+
+        .heading{
+            padding-left: 20px;
+        }
+
+        .content{
+            font-size: small;
+            margin: 20px;
+        }
+
+        .button{
+            text-align: center;
+        }
+
+        .button button{
+            font-family: "Google Sans", sans-serif;
+            font-size: smaller;
+            border-radius: 13px;
+            padding: 5px 10px;
+            background-color: aliceblue;
+            border: 0.5px solid rgb(103, 103, 226);
+        }
+
+    </style>
+</head>
+<body>   
+    <div class="container">
+        <div class="image">
+            <img src="0892f734e17dc5edfcdceaa9c8df03f3.jpg" alt="" width="259px" height="200px">
+        </div>
+
+        <div class="subhead">
+            <span >Nature</span>
+            <span >Lake</span>
+        </div>
+
+        <div class="heading">
+            <h1>Lago di Braies</h1>
+        </div>
+
+        <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ipsum quidem minus nesciunt nisi obcaecati. Veniam, deleniti eum!
+        </div>
+
+        <!-- <div class="readmore">
+            Read More
+        </div> -->
+
+        <div class="button">
+            <button>
+                Read More
+            </button>
+        </div>
+    </div>
+
+
+</body>
+</html>

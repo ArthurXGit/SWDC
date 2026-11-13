@@ -1,0 +1,50 @@
+.container {
+    border: 1px solid black;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 20px;
+    border-radius: 7px;
+    background-color: rgb(118, 241, 149);
+    background-color: var(--background_color);
+}
+
+.heading {
+    padding: 12px;
+    margin-right: 969px;
+    background-color: green;
+    background-color: var(--headingcol);
+}
+
+.content1 {
+    margin-right: 20px;
+    background-color: red;
+    background-color: var(--content1col);
+}
+
+.content2 {
+    margin-right: 20px;
+    background-color: grey;
+    background-color: var(--content2col);
+}
+
+.content3 {
+    margin-right: 20px;
+    background-color: blue;
+    background-color: var(--content3col);
+}
+
+.content4 {
+    margin-right: 20px;
+    background-color: aqua;
+    background-color: var(--content4col);
+    
+}
+
+:root{
+    --background_color : red;
+    --headingcol : purple;
+    --content1col : green;
+    --content2col : grey;
+    --content3col : pink;
+    --content4col : lightgreen;
+}
