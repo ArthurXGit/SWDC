@@ -6,6 +6,13 @@ body{
     padding: 0px;
 }
 
+@font-face {
+    font-family: "IGI Tiny";
+    src: url(fonts/igi-tiny.woff) format("woff");
+    font-display: swap;
+    unicode-range: U +0000 -024F, U +2000 -206F, U +20AC, U +2122;
+}
+
 .content{
     background-color: white;
     padding: 60px;
@@ -34,8 +41,7 @@ body{
     top: -30px;
     margin: 4px;
     color: rgb(159, 152, 152);
-    font-family: "Google Sans", sans-serif;
-    font-weight: 600;
+    font: 20px / 1.45 "IGI Tiny", Tahoma, sans-serif;
 }
 
 .heading{
