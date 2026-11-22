@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        .container{
+            width: 60vw;
+            height: 60vh;
+            border: 2px solid red;
+        }
+
+        .box{
+            height: 55px;
+            width: 55px;
+            border: 2px solid black;
+
+            /* transform: rotate(69deg); */
+
+            /* 
+                by using this property , we can transform an object in 2D / 3D space
+
+                transform : rotate();
+
+                you can rotate in x , y and z direction also 
+
+                rotate units : 
+                1. deg
+                2. turn (1 turn = 360 deg)
+
+                rotateX / rotateY / rotateZ : obj will rotate acc to the respective axis
+            */
+
+            /* transform: scale(1.67); increases the size by (x) times */
+
+            /* 
+                skew : like pulling something by holding it from both ends
+                it can be in x direction and in y direction
+
+                note : skew can't be done in z-axis
+            */
+
+            /* transform: skew(43deg); */
+
+            /* transform: translate(67px); */
+
+            /* 
+                multiple values allowed
+                transform: translate(10px) translateY(10px) scale(0.67) skew(29deg);
+            */
+
+            /* transform-origin: 10% 50%; */
+
+            /* 
+                default val of transform-origin : 50% 50% 0% 
+                for x , y and z direction
+            */
+
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>
