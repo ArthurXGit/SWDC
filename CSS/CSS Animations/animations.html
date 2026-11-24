@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+
+        .box{
+            width: 55px;
+            height: 55px;
+            animation: animate 5s ease-in-out 2s infinite alternate;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+        
+        @keyframes animate {
+
+            from{
+                background-color: aquamarine;
+                border: 1px solid grey;
+                
+            }
+
+            to{
+                background-color: blueviolet;
+                border: 1px solid black;
+                transform: translate(690px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
