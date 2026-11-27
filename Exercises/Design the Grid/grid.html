@@ -11,6 +11,12 @@
             align-items: center;
         }
 
+        .second{
+            font-size: 13px;
+            margin-bottom: 30px;
+        }
+
+
         nav {
             display: flex;
             justify-content: space-around;
@@ -20,16 +26,16 @@
             background-color: rgb(246 246 246);
             gap: 185px;
             border-radius: 5px;
-            font-family: Inter, Helvetica, Arial, Lucida, sans-serif;
-            font-size: 14px;
-            font-weight: 500;
-            padding: 8px 16px;
+            padding: 2px 14px;
         }
 
         .one,
         .two {
             display: flex;
-            gap: 20px;
+            gap: 15px;
+            font-family: sans-serif;
+            font-size: 15px;
+            font-weight: 100;
         }
 
         .heading img {
@@ -55,10 +61,19 @@
             width: 280px;
         }
 
+        .container .rest{
+            font-size: 18px;
+            font-weight: 600;
+        }
+
         .one-bit,
         .two-bit {
-            /* display: inline; */
             font-size: 0.7em;
+        }
+
+        li svg {
+            height: 12px;
+            width: 12px;
         }
 
         main {
@@ -69,9 +84,6 @@
 
         .container .item {
             background-color: rgb(246, 246, 246);
-            /* width: 140px; */
-            /* padding: 0 62px; */
-            display: grid;
         }
 
         .container .item span {
@@ -94,8 +106,36 @@
             color: white;
         }
 
-        .container p{
-            font-weight: 660;
+        
+        .item-1 p{
+            font-weight: 600;
+            margin-bottom: 65.6px;
+            font-size: 18px;
+        }
+
+        .two .button {
+            padding: 6px 17px;
+            border-radius: 5px;
+            background-color: #ffe300;
+        }
+
+        .holder a {
+            text-decoration: none;
+        }
+
+        .one-bit:hover {
+            background-color: rgb(46, 118, 207);
+            color: white;
+        }
+
+        .two-bit:hover {
+            background-color: rgb(39, 123, 39);
+            color: white;
+        }
+
+        .button:hover {
+            background-color: #ecd100;
+            cursor: pointer;
         }
     </style>
 
@@ -138,9 +178,13 @@
             </ul>
 
             <ul class="two">
-                <li>Download</li><i class="hgi hgi-stroke hgi-rounded hgi-arrow-down-01"></i>
-                <li>English</li><i class="hgi hgi-stroke hgi-rounded hgi-arrow-down-01"></i>
-                <div class="image"></div>
+                <li class="button">Download</li>
+                <li>Language <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                            stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
             </ul>
         </nav>
     </header>
@@ -148,73 +192,122 @@
     <main>
         <div class="container">
             <div class="item item-1">
-                <p>English</p>
+                <p class="initial">English</p>
                 <div class="holder">
-                    <span class="one-bit">Download 32-bit</span>
-                    <span class="two-bit">Download 64 bit</span>
+                    <a href="Slice 1.svg" download="edit.exe">
+                        <span class="one-bit">Download 32-bit</span>
+                    </a>
+                    <a href="Slice 1.svg" download="edit.exe">
+                        <span class="two-bit">Download 64-bit</span>
+                    </a>
                 </div>
             </div>
             <div class="item item-2">
-                <p>English</p>
+                <p class="rest">German</p>
+                <p class="second">Deutsch</p>
                 <div class="holder">
-                    <span class="one-bit">Download 32-bit</span>
-                    <span class="two-bit">Download 64 bit</span>
+                    <a href="Slice 1.svg" download="edit.exe">
+                        <span class="one-bit">Download 32-bit</span>
+                    </a>
+                    <a href="Slice 1.svg" download="edit.exe">
+                        <span class="two-bit">Download 64-bit</span>
+                    </a>
                 </div>
             </div>
             <div class="item item-3">
-                <p>English</p>
+                <p class="rest">Italian</p>
+                <p class="second">Italiano</p>
                 <div class="holder">
-                    <span class="one-bit">Download 32-bit</span>
-                    <span class="two-bit">Download 64 bit</span>
+                    <a href="Slice 1.svg" download="edit.exe">
+                        <span class="one-bit">Download 32-bit</span>
+                    </a>
+                    <a href="Slice 1.svg" download="edit.exe">
+                        <span class="two-bit">Download 64-bit</span>
+                    </a>
                 </div>
             </div>
             <div class="item item-4">
-                <p>English</p>
+                <p class="rest">Spanish</p>
+                <p class="second">Español</p>
                 <div class="holder">
-                    <span class="one-bit">Download 32-bit</span>
-                    <span class="two-bit">Download 64 bit</span>
+                    <a href="Slice 1.svg" download="edit.exe">
+                        <span class="one-bit">Download 32-bit</span>
+                    </a>
+                    <a href="Slice 1.svg" download="edit.exe">
+                        <span class="two-bit">Download 64-bit</span>
+                    </a>
                 </div>
             </div>
             <div class="item item-5">
-                <p>English</p>
+                <p class="rest">Portuguese</p>
+                <p class="second">Português</p>
                 <div class="holder">
-                    <span class="one-bit">Download 32-bit</span>
-                    <span class="two-bit">Download 64 bit</span>
+                    <a href="Slice 1.svg" download="edit.exe">
+                        <span class="one-bit">Download 32-bit</span>
+                    </a>
+                    <a href="Slice 1.svg" download="edit.exe">
+                        <span class="two-bit">Download 64-bit</span>
+                    </a>
                 </div>
             </div>
             <div class="item item-6">
-                <p>English</p>
+                <p class="rest">Brazilian Portuguese</p>
+                <p class="second">Português brasileiro</p>
                 <div class="holder">
-                    <span class="one-bit">Download 32-bit</span>
-                    <span class="two-bit">Download 64 bit</span>
+                    <a href="Slice 1.svg" download="edit.exe">
+                        <span class="one-bit">Download 32-bit</span>
+                    </a>
+                    <a href="Slice 1.svg" download="edit.exe">
+                        <span class="two-bit">Download 64-bit</span>
+                    </a>
                 </div>
             </div>
             <div class="item item-7">
-                <p>English</p>
+                <p class="rest">Japanese</p>
+                <p class="second">日本語</p>
                 <div class="holder">
-                    <span class="one-bit">Download 32-bit</span>
-                    <span class="two-bit">Download 64 bit</span>
+                    <a href="Slice 1.svg" download="edit.exe">
+                        <span class="one-bit">Download 32-bit</span>
+                    </a>
+                    <a href="Slice 1.svg" download="edit.exe">
+                        <span class="two-bit">Download 64-bit</span>
+                    </a>
                 </div>
             </div>
             <div class="item item-8">
-                <p>English</p>
+                <p class="rest">Korean</p>
+                <p class="second">한국인</p>
                 <div class="holder">
-                    <span class="one-bit">Download 32-bit</span>
-                    <span class="two-bit">Download 64 bit</span>
+                    <a href="Slice 1.svg" download="edit.exe">
+                        <span class="one-bit">Download 32-bit</span>
+                    </a>
+                    <a href="Slice 1.svg" download="edit.exe">
+                        <span class="two-bit">Download 64-bit</span>
+                    </a>
                 </div>
             </div>
             <div class="item item-9">
-                <p>English</p>
+                <p class="rest">Chinese</p>
+                <p class="second">中国人</p>
                 <div class="holder">
-                    <span class="one-bit">Download 32-bit</span>
-                    <span class="two-bit">Download 64 bit</span>
+                    <a href="Slice 1.svg" download="edit.exe">
+                        <span class="one-bit">Download 32-bit</span>
+                    </a>
+                    <a href="Slice 1.svg" download="edit.exe">
+                        <span class="two-bit">Download 64-bit</span>
+                    </a>
                 </div>
             </div>
             <div class="item item-10">
-                <p>English</p>
+                <p class="rest">Traditional Chinese</p>
+                <p class="second">中文</p>
                 <div class="holder">
-                    <span class="one-bit">Download 32-bit</span>
-                    <span class="two-bit">Download 64 bit</span>
+                    <a href="Slice 1.svg" download="edit.exe">
+                        <span class="one-bit">Download 32-bit</span>
+                    </a>
+                    <a href="Slice 1.svg" download="edit.exe">
+                        <span class="two-bit">Download 64-bit</span>
+                    </a>
                 </div>
             </div>
         </div>
